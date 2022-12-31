@@ -1,8 +1,14 @@
+using CURD_UsingRazorPages.Data;
+using CURD_UsingRazorPages.Model;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+	builder.Configuration.GetConnectionString("Database")
+	));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
