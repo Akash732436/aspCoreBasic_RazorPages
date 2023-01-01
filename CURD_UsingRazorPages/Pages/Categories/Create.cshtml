@@ -1,0 +1,42 @@
+﻿@page
+@model CURD_UsingRazorPages.Pages.Categories.CreateModel
+
+<div class="container">
+	<div class="row">
+		<h3 class="text-primary">Create Category</h3>
+		<hr/>
+	</div>
+
+	<form method="post" class="border p-2">
+		<div class="m-2">
+			<div asp-validation-summary="All"></div>
+		</div>
+		<div class="m-2">
+			<label asp-for="@Model.category.Name"></label>
+			<input asp-for="@Model.category.Name" class="form-control" />
+			<span asp-validation-for="@Model.category.Name" class="text-danger"></span>
+		</div>
+		<div class="m-2">
+			<label asp-for="@Model.category.DisplayOrder"></label>
+			<input asp-for="@Model.category.DisplayOrder" class="form-control" />
+			<span asp-validation-for="@Model.category.DisplayOrder" class="text-danger"></span>
+		</div>
+
+		<div class="row mt-4">
+			<div class="col-6">
+			<button class="btn btn-outline-success" type="submit">Create</button>
+			</div>
+			<div class="text-end col-6">
+				<a class="btn btn-outline-primary" asp-page="Index">Back to List</a>
+			</div>
+		</div>
+		
+	</form>
+
+</div>
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+}

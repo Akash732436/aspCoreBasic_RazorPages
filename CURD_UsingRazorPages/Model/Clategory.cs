@@ -8,8 +8,9 @@ namespace CURD_UsingRazorPages.Model
 		[Key]
 		public int Id { get; set; }
 		[Required]
-		[DisplayName("Order Number")]
+		
 		public String Name { get; set; }
+		[DisplayName("Order Number")]
 		[Range(1,100)]
 		public int DisplayOrder { get; set; }
 

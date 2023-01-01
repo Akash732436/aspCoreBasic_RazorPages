@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j2Z/L0t0sHz8eJROF8UHlOe+rcmDPvvtGxrKrSWrzHw=",
+  "Hash": "HKvsqTRA96za7rVTzpyBuPE67i9lN6LvEIqyedm2rv4=",
   "Source": "CURD_UsingRazorPages",
   "BasePath": "_content/CURD_UsingRazorPages",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\c# sample code\\demo projects\\DemoApp2\\CURD_UsingRazorPages\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CURD_UsingRazorPages.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\c# sample code\\demo projects\\DemoApp2\\CURD_UsingRazorPages\\wwwroot\\css\\Darkly.css",
+      "SourceId": "CURD_UsingRazorPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c# sample code\\demo projects\\DemoApp2\\CURD_UsingRazorPages\\wwwroot\\",
+      "BasePath": "_content/CURD_UsingRazorPages",
+      "RelativePath": "css/Darkly.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Darkly.css"
     },
     {
       "Identity": "D:\\c# sample code\\demo projects\\DemoApp2\\CURD_UsingRazorPages\\wwwroot\\css\\site.css",

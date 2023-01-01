@@ -2,3 +2,60 @@
 @model CURD_UsingRazorPages.Pages.Categories.IndexModel
 @{
 }
+
+<div class="container mt-5">
+	<div class="row">
+		<div class="col-6">
+			<h3 class="text-primary">Category List</h3>
+		</div>
+		<div class="col-6 text-end">
+			
+			<a class="btn btn-success" asp-page="Create">
+				<i class="bi bi-pencil-square"></i>
+				&nbsp;
+				Create
+				</a>
+		</div>
+	</div>
+	<br/>
+	<br/>
+
+	<table class="table table-bordered table-striped" style="width:100%;">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Order Number</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model.categories)
+			{
+				<tr>
+					<td>
+						@item.Name
+					</td>
+					<td>
+						@item.DisplayOrder
+					</td>
+					<td>
+						<a class="btn btn-primary" asp-page="Edit" asp-route-id="@item.Id">
+							<i class="bi bi-pencil-square"></i>
+							&nbsp;
+							Edit
+							</a>
+					</td>
+					<td>
+							<a class="btn btn-danger" asp-page="Delete" asp-route-id="@item.Id">
+							<i class="bi bi-trash"></i>
+							&nbsp;
+							Remove
+						</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+
+</div>

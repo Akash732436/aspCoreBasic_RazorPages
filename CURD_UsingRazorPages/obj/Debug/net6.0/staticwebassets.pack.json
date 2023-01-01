@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CURD_UsingRazorPages.bundle.scp.css"
     },
     {
+      "Id": "D:\\c# sample code\\demo projects\\DemoApp2\\CURD_UsingRazorPages\\wwwroot\\css\\Darkly.css",
+      "PackagePath": "staticwebassets\\css\\Darkly.css"
+    },
+    {
       "Id": "D:\\c# sample code\\demo projects\\DemoApp2\\CURD_UsingRazorPages\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
